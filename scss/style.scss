@@ -111,3 +111,29 @@ body {
 .third-container #tc {
 	width: 24%; /*240/16*/
 }
+
+@mixin border1($medida) {
+  border-style: solid;
+  border-width: $medida;
+  border-color: $background-container-first;
+}
+
+@mixin border2($medida) {
+  border-style: solid;
+  border-width: $medida;
+  border-color: $background-container-second;
+}
+
+.border1 {
+  @include border1(7px);
+}
+
+.border2 {
+  @include border2(7px);
+}
+
+.fourth-container #fc {
+	width: 44.8%;
+	padding: 0.900%;
+	height: 2em;
+}
