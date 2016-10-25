@@ -47,6 +47,15 @@ body {
   margin-top: 1em;
   float: left; }
 
+.box4 {
+  background: #E6E1D8; }
+
+.box5 {
+  background: #F7F2E9; }
+
+.box6 {
+  background: #fffaf4; }
+
 .box1:nth-child(1) {
   background: #FF8400; }
 
@@ -104,7 +113,7 @@ body {
   /*240/16*/ }
 
 .fourth-container #fc {
-  width: 44.4%;
+  width: 44.9%;
   /*460/16*/
   padding: 0.900%;
   /*10/16*/
@@ -112,12 +121,12 @@ body {
 
 .border1 {
   border-style: solid;
-  border-width: 0.6em;
+  border-width: 0.4em;
   border-color: #FF8400; }
 
 .border2 {
   border-style: solid;
-  border-width: 0.6em;
+  border-width: 0.4em;
   border-color: #3B4044; }
 
 /*# sourceMappingURL=style.css.map */
