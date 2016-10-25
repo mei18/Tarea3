@@ -13,8 +13,7 @@ $background-container-fifth: #fffaf4;
 };
 
 body {
-    padding-top: 7.875%;
-    /*126/16*/
+    padding-top: 7.875%; /*126/16*/
     font-size: 100%;
 };
 
@@ -28,78 +27,82 @@ body {
   }
 }
 
+.wrapper {
+    max-width: 60em; /*960/16*/
+    margin: 0 auto;
+};
+
+.container {
+    margin-bottom: 0.75em; /*12/16*/
+};
+
+//header
 .header {
     background-color: $background-header-footer;
-    height: 7.125em;
+    height: 7.125em; /*114/16*/
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
 };
 
+//footer
 .footer {
     background-color: $background-header-footer;
-    height: 6.1em;
+    height: 6.1em; /*106/16*/
 };
 
+//boxes
 .box1,
 .box2,
 .box3,
 .box4,
 .box5,
 .box6 {
-    height: 11.9em;
+    height: 11.9em; /*200/16*/
     margin-top: 1em;
     float: left;
 };
 
-.wrapper {
-    max-width: 60em;
-    /*960/16*/
-    margin: 0 auto;
-};
-
-.container {
-    margin-bottom: 0.75em;
-    /*12/16*/
-};
-
+//loops with for
+//First color
 @for $i from 1 through 3 {
     .box1:nth-child(#{$i}) {
         background: $background-container-first;
     };
 };
-
+//Second color
 @for $e from 1 through 3 {
     .box2:nth-child(#{$e}) {
         background: $background-container-second;
     };
 };
-
+//Third color
 @for $a from 1 through 3 {
     .box3:nth-child(#{$a}) {
         background: $background-header-footer;
     };
 };
-
+//Fourth color
 @for $u from 1 through 2 {
     .box4:nth-child(#{$u}) {
         background: $background-container-third;
     };
 };
-
+//Fifth color
 @for $o from 1 through 2 {
     .box5:nth-child(#{$o}) {
         background: $background-container-fourth;
     };
 };
-
+//Sixth color
 @for $w from 1 through 2 {
     .box5:nth-child(#{$w}) {
         background: $background-container-fifth;
     };
 };
 
+//Containers width
 .first-container #fc {
     width: 16%;
 };
@@ -112,6 +115,13 @@ body {
 	width: 24%; /*240/16*/
 }
 
+.fourth-container #fc {
+	width: 44.8%; /*460/16*/
+	padding: 0.900%; /*10/16*/
+	height: 2em;
+}
+
+//borders 
 @mixin border1($medida) {
   border-style: solid;
   border-width: $medida;
@@ -130,10 +140,4 @@ body {
 
 .border2 {
   @include border2(7px);
-}
-
-.fourth-container #fc {
-	width: 44.8%;
-	padding: 0.900%;
-	height: 2em;
 }
