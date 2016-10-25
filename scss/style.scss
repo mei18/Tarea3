@@ -1,0 +1,113 @@
+//variables
+$background-header-footer: #494948;
+$background-container-first: #FF8400;
+$background-container-second: #3B4044;
+$background-container-third: #E6E1D8;
+$background-container-fourth: #F7F2E9;
+$background-container-fifth: #fffaf4;
+
+
+* {
+    margin: 0;
+    padding: 0;
+};
+
+body {
+    padding-top: 7.875%;
+    /*126/16*/
+    font-size: 100%;
+};
+
+.row {
+  &:after, &:before {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.header {
+    background-color: $background-header-footer;
+    height: 7.125em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+};
+
+.footer {
+    background-color: $background-header-footer;
+    height: 6.1em;
+};
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    height: 11.9em;
+    margin-top: 1em;
+    float: left;
+};
+
+.wrapper {
+    max-width: 60em;
+    /*960/16*/
+    margin: 0 auto;
+};
+
+.container {
+    margin-bottom: 0.75em;
+    /*12/16*/
+};
+
+@for $i from 1 through 3 {
+    .box1:nth-child(#{$i}) {
+        background: $background-container-first;
+    };
+};
+
+@for $e from 1 through 3 {
+    .box2:nth-child(#{$e}) {
+        background: $background-container-second;
+    };
+};
+
+@for $a from 1 through 3 {
+    .box3:nth-child(#{$a}) {
+        background: $background-header-footer;
+    };
+};
+
+@for $u from 1 through 2 {
+    .box4:nth-child(#{$u}) {
+        background: $background-container-third;
+    };
+};
+
+@for $o from 1 through 2 {
+    .box5:nth-child(#{$o}) {
+        background: $background-container-fourth;
+    };
+};
+
+@for $w from 1 through 2 {
+    .box5:nth-child(#{$w}) {
+        background: $background-container-fifth;
+    };
+};
+
+.first-container #fc {
+    width: 16%;
+};
+
+.second-container #sc{
+	width: 32%; /*320/16*/
+}
+
+.third-container #tc {
+	width: 24%; /*240/16*/
+}
