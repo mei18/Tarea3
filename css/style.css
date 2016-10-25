@@ -13,28 +13,6 @@ body {
 .row:after {
   clear: both; }
 
-.header {
-  background-color: #494948;
-  height: 7.125em;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0; }
-
-.footer {
-  background-color: #494948;
-  height: 6.1em; }
-
-.box1,
-.box2,
-.box3,
-.box4,
-.box5,
-.box6 {
-  height: 11.9em;
-  margin-top: 1em;
-  float: left; }
-
 .wrapper {
   max-width: 60em;
   /*960/16*/
@@ -43,6 +21,31 @@ body {
 .container {
   margin-bottom: 0.75em;
   /*12/16*/ }
+
+.header {
+  background-color: #494948;
+  height: 7.125em;
+  /*114/16*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.footer {
+  background-color: #494948;
+  height: 6.1em;
+  /*106/16*/ }
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+  height: 11.9em;
+  /*200/16*/
+  margin-top: 1em;
+  float: left; }
 
 .box1:nth-child(1) {
   background: #FF8400; }
@@ -99,5 +102,22 @@ body {
 .third-container #tc {
   width: 24%;
   /*240/16*/ }
+
+.fourth-container #fc {
+  width: 44.4%;
+  /*460/16*/
+  padding: 0.900%;
+  /*10/16*/
+  height: 2em; }
+
+.border1 {
+  border-style: solid;
+  border-width: 0.6em;
+  border-color: #FF8400; }
+
+.border2 {
+  border-style: solid;
+  border-width: 0.6em;
+  border-color: #3B4044; }
 
 /*# sourceMappingURL=style.css.map */

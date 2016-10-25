@@ -116,12 +116,12 @@ body {
 }
 
 .fourth-container #fc {
-	width: 44.8%; /*460/16*/
+	width: 44.4%; /*460/16*/
 	padding: 0.900%; /*10/16*/
 	height: 2em;
 }
 
-//borders 
+//borders
 @mixin border1($medida) {
   border-style: solid;
   border-width: $medida;
@@ -135,9 +135,9 @@ body {
 }
 
 .border1 {
-  @include border1(7px);
+  @include border1(0.6em);
 }
 
 .border2 {
-  @include border2(7px);
+  @include border2(0.6em);
 }
